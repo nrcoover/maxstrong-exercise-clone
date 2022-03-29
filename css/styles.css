@@ -122,24 +122,118 @@
 }
 
 :root {
-    --theme-color-black: #333333; /* rgba(51, 51, 51, 1) */
-    --theme-color-brown: #423A3A; 
-    --theme-color-red: #CD3A24;
-    --theme-color-white: #FEFFFF; /* rgba(254, 255, 255, 1) */
+    --theme-color-black-text: #111235; /* rgba(17, 18, 53, 1) */
+    ; /* rgba(51, 51, 51, 1) */
+    --theme-color-blue: #436BAA; /* rgba(67, 107, 170, 1) */
+    --theme-color-purple: #4B5092; /* rgba(75, 80, 146, 1) */
+    --theme-color-white: #FFFFFF; /* rgba(255, 255, 255, 1) */
+    --theme-color-off-white: #E5E5E5;
+
 }
   
-/* ---------- MAIN BODY DECLERATIONS ---------- */
-
+/* ---------- HTML TAG DECLERATIONS ---------- */
 html, body {
     background-color: var(--theme-color-white);
+    color: var(--theme-color-black-text);
     font-family: "Hellix";
-    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
     height: 100%;
+    max-width: 100vw;
+    min-width: 414px;
+    text-align: center;
     width: 100%;
 }
 
-/* RECOMMENDED: BEGIN WITH MOBILE FIRST DESIGN */
+header {
+    background-color: var(--theme-color-white);
+    height: 75px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
 
+main {
+    max-width: inherit;
+}
+
+article {
+    background-color: var(--theme-color-off-white);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: space-around;
+    margin-top: 7.5rem;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--theme-color-black-text);
+    font-family: "Hellix";
+    font-style: normal;
+    font-weight: 500;
+}
+
+h1 {
+    transform: translate(0, 50%);
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+img {
+    max-width: 100vw;
+}
+
+button {
+    background-color: var(--theme-color-white);
+    border-radius: 35px;
+    color: var(--theme-color-blue);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 19px 0px;
+    width: 252px;
+}
+
+.btn-purple {
+    background-color: var(--theme-color-purple);
+    color: var(--theme-color-white);
+}
+
+/* ---------- MAIN BODY DECLERATIONS ---------- */
+#landing-page-full {
+    /* height: 100vh; */
+    /* min-height: 100vh; */
+}
+
+#first-section {
+    margin-top: 75px;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.section-content-wrap {
+    margin: 1rem;
+}
+
+.section-content-wrap > *, .section-content-wrap button {
+    margin-top: 2rem;
+}
 
 
 
