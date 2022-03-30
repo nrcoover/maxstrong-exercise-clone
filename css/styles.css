@@ -168,7 +168,7 @@ header {
 
 main, footer {
     margin: 0 auto;
-    max-width: 600px;
+    
 }
 
 section, footer {
@@ -249,11 +249,18 @@ a, a:visited {
 }
 
 /* ---------- MAIN BODY DECLERATIONS ---------- */
+/* Specifying which segments of the landing page have a max-width; the trainer-section has no max-width, but it's contents do. */
+#article1, #article2, #article4, #trainer-section .section-content-wrap, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
 #first-section {
     margin-top: 75px;
 }
 
-#trainer-section {
+#article3 {
     background: linear-gradient(99.85deg, #BAD5FF 0%, #6487BF 100%);
 }
 
@@ -423,15 +430,18 @@ a, a:visited {
 
     main, footer {
         margin: 0 auto;
-        max-width: 1200px;
-
-
-
-        padding: 0 2rem;
+        max-width: none;
     }
 
     header {
         box-shadow: none;
+    }
+
+    /* Specifying which segments of the landing page have a max-width; the trainer-section has no max-width, but it's contents do. */
+    #article1, #article2, #article4, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
 
     #header-navigation {
@@ -462,6 +472,10 @@ a, a:visited {
     #first-section .section-content-wrap {
         text-align: left;
         margin-left: 0;
+    }
+
+    #trainer-section {
+        max-width: none !important;
     }
 
     .header-section {
