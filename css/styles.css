@@ -438,7 +438,7 @@ a, a:visited {
     }
 
     /* Specifying which segments of the landing page have a max-width; the trainer-section has no max-width, but it's contents do. */
-    #article1, #article2, #article4, footer {
+    #article1, #article2, #trainer-section, #article4, footer {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 2.5rem;
@@ -461,7 +461,7 @@ a, a:visited {
         align-items: center;
     }
 
-    #first-section, #section2 {
+    #first-section, #section2, #trainer-section {
         align-items: center;
         justify-content: space-between;
         display: flex;
@@ -504,7 +504,14 @@ a, a:visited {
     }
     
     #trainer-section {
-        max-width: none !important;
+        text-align: left;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    #trainer-section .section-content-wrap {
+        margin: 0 0 0 2rem;
+        width: 50%;
     }
 
     .header-section {
