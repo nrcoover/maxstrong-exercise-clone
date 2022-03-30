@@ -424,7 +424,10 @@ a, a:visited {
     main, footer {
         margin: 0 auto;
         max-width: 1200px;
-        display: block;
+
+
+
+        padding: 0 2rem;
     }
 
     header {
@@ -435,14 +438,23 @@ a, a:visited {
         display: flex;
     }
 
-    #header-navigation li {
+    #header-navigation-wrap {
+        display: flex;
+    }
+
+    #header-navigation-wrap li {
         margin: 0 1rem;
     }
 
+    #icon-search-wrap {
+        display: flex;
+        align-items: center;
+    }
+
     #first-section {
+        align-items: center;
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
         margin: 0 auto;
         margin-top: 5.5rem;
     }
@@ -453,12 +465,17 @@ a, a:visited {
     }
 
     .header-section {
+        align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
         margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+
+    .header-section nav {
+        display: flex;
     }
 }
 
