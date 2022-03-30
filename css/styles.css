@@ -149,7 +149,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(7.28deg, #EEF5FF 0%, #FFFFFF 50%, #FFFFFF 99.69%);
+    background: linear-gradient(7.28deg, #d3e5ff 0%, #FFFFFF 50%, #FFFFFF 99.69%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -329,10 +329,6 @@ a, a:visited {
 .email-form-wrap {
     margin: 2rem auto;
     width: 16rem;
-    
-    
-    
-    background-color: pink;
 }
 
 .email-form-wrap > * {
@@ -340,9 +336,26 @@ a, a:visited {
 }
 
 .email-form {
-    position: relative;
+    align-items: center;
     display: flex;
-    margin: 1.5rem auto 1rem;
+    justify-content: flex-end;
+    margin: 1.75rem auto 1rem;
+    position: relative;
+}
+
+.email-form > * {
+    margin: 1rem 0;
+}
+
+.input-submit-wrap {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    height: inherit;
+    justify-content: space-around;
+    right: 0;
+    width: 3rem;
+    z-index: 3;
 }
 
 .email-form .input-email {
@@ -351,11 +364,14 @@ a, a:visited {
     width: 16rem;
 }
 
-.email-form .input-submit {
+.input-email {
+    box-shadow: 2px 2px 5px rgba(17, 18, 53, .1);
     position: absolute;
-    background-color: green;
-    height: 1rem;
-    width: 1rem;
+}
+
+.input-email:focus {
+    border: solid 2px rgba(67, 107, 170, .5);
+    outline: none;
 }
 
 .icons-container {
@@ -366,7 +382,19 @@ a, a:visited {
 }
 
 .icon-button {
+    height: 1.2rem;
     position: absolute;
+    width: 1.2rem;
+    z-index: 5;
+    /* This icon has no submission functionality; it is for display only, but it sits below the submission input on the z-index, giving the appearance of a button. */
+}
+
+.input-submit {
+    height: 1rem;
+    opacity: 0;
+    width: 1rem;
+    z-index: 10;
+    /* This submission input sits invisibly on top of the desired send icon. */
 }
 
 .icon-blue {
@@ -375,13 +403,6 @@ a, a:visited {
     padding: .5rem;
     margin: .5rem;
 }
-
-/* .input-submit, .icon-button {
-    right: 0;
-    top: 0;
-    transform: translate(0, -50%);
-} */
-
 
 /* MEDIA QUERY TEMPLATE FROM https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 
