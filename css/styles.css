@@ -144,6 +144,8 @@ html, body {
     max-width: 100%;
     min-height: 100%;
     min-width: 320px;
+    overflow-x: hidden;
+    /* overflow hidden is necessary because the image in the hero section has been transformed to outside the width of the page; it was moved there for visual asthetics, and should be the only element branching outside the viewport. */
     text-align: center;
     width: 100%;
 }
@@ -210,7 +212,8 @@ h2 {
 h3 {
     font-weight: 700;
     font-size: 1.5rem;
-    line-height: 1.875rem
+    line-height: 1.875rem;
+    width: 15rem;
 }
 
 h4 {
@@ -461,7 +464,7 @@ a, a:visited {
         align-items: center;
     }
 
-    #first-section, #section2, #trainer-section {
+    #first-section, #section2, #trainer-section, #section3 {
         align-items: center;
         justify-content: space-between;
         display: flex;
