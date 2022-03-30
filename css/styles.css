@@ -192,6 +192,7 @@ h2 {
 
 p {
     line-height: 1.5rem;
+    font-weight: 500;
 }
 
 img {
@@ -208,11 +209,6 @@ button {
     font-weight: 600;
     padding: 19px 0px;
     width: 252px;
-}
-
-.btn-purple {
-    background-color: var(--theme-color-purple);
-    color: var(--theme-color-white);
 }
 
 /* ---------- MAIN BODY DECLERATIONS ---------- */
@@ -244,6 +240,14 @@ button {
     background-color: var(--theme-color-blue-light);
 }
 
+.text-left {
+    text-align: left;
+}
+
+.btn-purple {
+    background-color: var(--theme-color-purple);
+    color: var(--theme-color-white);
+}
 
 
 /* MEDIA QUERY TEMPLATE FROM https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
