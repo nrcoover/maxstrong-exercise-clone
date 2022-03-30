@@ -366,7 +366,15 @@ a, a:visited {
 
 .input-email {
     box-shadow: 2px 2px 5px rgba(17, 18, 53, .1);
+    color: var(--theme-color-black-text);
+    font-family: 'Hellix';
+    font-weight: 400;
+    font-size: .875rem;
     position: absolute;
+}
+
+.input-email::placeholder {
+    color: var(--theme-color-black-text);
 }
 
 .input-email:focus {
