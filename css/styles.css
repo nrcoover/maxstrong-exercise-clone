@@ -275,6 +275,10 @@ a, a:visited {
     margin-bottom: 1.5rem;
 }
 
+#section4 button {
+    margin-bottom: 5rem;
+}
+
 #header-navigation {
     display: none;
 }
@@ -464,7 +468,7 @@ a, a:visited {
         align-items: center;
     }
 
-    #first-section, #section2, #trainer-section, #section3 {
+    #first-section, #section2, #trainer-section, #section4 {
         align-items: center;
         justify-content: space-between;
         display: flex;
@@ -520,6 +524,28 @@ a, a:visited {
 
     #trainer-section img {
         width: 55%;
+    }
+
+    #section4 .section-content-wrap {
+        position: relative;
+    }
+
+    #section4 button {
+        margin: 1rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .colored-bubble-wrap-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .colored-bubble-wrap {
+        width: 45%;
+        margin: .5rem;
     }
 
     .header-section {
