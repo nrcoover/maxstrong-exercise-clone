@@ -412,6 +412,18 @@ a, a:visited {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+main, footer {
+    max-width: 1200px;
+}
+
+#first-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#first-section .section-content-wrap {
+    text-align: left;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
