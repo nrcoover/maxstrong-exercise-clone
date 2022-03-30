@@ -441,7 +441,7 @@ a, a:visited {
     #article1, #article2, #article4, footer {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 2rem;
+        padding: 0 2.5rem;
     }
 
     #header-navigation {
@@ -461,7 +461,7 @@ a, a:visited {
         align-items: center;
     }
 
-    #first-section {
+    #first-section, #section2 {
         align-items: center;
         justify-content: space-between;
         display: flex;
@@ -475,16 +475,27 @@ a, a:visited {
         margin-left: 0;
         width: 45%;
     }
-
-    #first-section h1 {
+    
+    #first-section h1, .section-content-wrap h2 {
         margin-top: 0;
     }
-
+    
     #first-section img {
         width: 55%;
         transform: translate(8%, 5%);
     }
+    
+    #section2 {
+        background: none;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 70.75rem;
+    }
 
+    #section2 .section-content-wrap {
+        width: 40%;
+    }
+    
     #trainer-section {
         max-width: none !important;
     }
