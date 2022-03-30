@@ -493,7 +493,14 @@ a, a:visited {
     }
 
     #section2 .section-content-wrap {
-        width: 40%;
+        background-color: var(--theme-color-blue-light);
+        border-radius: 2rem;
+        padding: 2rem;
+        width: 45%;
+    }
+
+    #section2 img {
+        width: 55%;
     }
     
     #trainer-section {
