@@ -216,6 +216,18 @@ button {
     margin-top: 75px;
 }
 
+#trainer-section {
+    background: linear-gradient(99.85deg, #BAD5FF 0%, #6487BF 100%);
+}
+
+#trainer-section h4 {
+    margin-top: .5rem;
+}
+
+#trainer-section button {
+    margin-bottom: 1.5rem;
+}
+
 .header-section {
     margin: 0;
 }
