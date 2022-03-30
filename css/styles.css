@@ -275,6 +275,10 @@ a, a:visited {
     margin-bottom: 1.5rem;
 }
 
+#section4 h2 {
+    width: 18rem;
+}
+
 #section4 button {
     margin-bottom: 5rem;
 }
@@ -310,7 +314,10 @@ a, a:visited {
 .colored-bubble-wrap {
     border-radius: 2rem;
     padding: 3.125rem 2.625rem;
+    margin: 0 auto;
     margin-top: 1rem;
+    max-width: 26rem;
+    min-width: 18rem;
 }
 
 .colored-bubble-wrap h3 {
@@ -526,26 +533,48 @@ a, a:visited {
         width: 55%;
     }
 
+    #section4 {
+        margin-bottom: 4.5rem;
+    }
+
     #section4 .section-content-wrap {
         position: relative;
+        margin: .5rem;
+        width: auto;
+    }
+
+    #section4 h2 {
+        width: 100%;
+    }
+
+    #section4 h3 {
+        width: auto;
     }
 
     #section4 button {
-        margin: 1rem;
+        margin: .8rem;
         position: absolute;
         right: 0;
         top: 0;
+    }
+
+    #section4 img {
+        transform: translate(0, 10%);
+        width: 33.25%;
     }
     
     .colored-bubble-wrap-container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        width: 100%;
     }
 
     .colored-bubble-wrap {
-        width: 45%;
-        margin: .5rem;
+        width: 47.25%;
+        min-width: none;
+        padding: 2rem;
+        margin: .5rem .25rem;
     }
 
     .header-section {
