@@ -504,14 +504,19 @@ a, a:visited {
     }
     
     #trainer-section {
-        text-align: left;
         justify-content: space-around;
+        margin-top: 4rem;
+        text-align: left;
         width: 90%;
     }
 
     #trainer-section .section-content-wrap {
-        margin: 0 0 0 2rem;
-        width: 50%;
+        margin: 0 0 0 6rem;
+        width: 45%;
+    }
+
+    #trainer-section img {
+        width: 55%;
     }
 
     .header-section {
