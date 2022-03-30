@@ -322,6 +322,24 @@ a, a:visited {
     color: var(--theme-color-white);
 }
 
+.footer h6 {
+    margin-bottom: 5.5rem;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    margin: 1rem auto;
+}
+
+.icon-blue {
+    background: rgba(128, 173, 245, .1);
+    border-radius: 50%;
+    padding: .5rem;
+    margin: .5rem;
+}
+
 
 /* MEDIA QUERY TEMPLATE FROM https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 
