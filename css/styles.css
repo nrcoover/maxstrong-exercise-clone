@@ -590,6 +590,52 @@ a, a:visited {
     .header-section nav {
         display: flex;
     }
+
+    .footer .section-content-wrap {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 4rem;
+        text-align: left;
+    }
+
+    .footer h2 {
+        margin: 0;
+    }
+
+    .footer nav, .footer li, .footer h4 {
+        margin: 0;
+    }
+
+    .footer nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer li {
+        margin: .5rem 3rem;
+    }
+
+    .footer h6 {
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .footer #footer-navigation {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .footer .email-form-wrap {
+        margin: 0;
+    }
+
+    .icons-container {
+        display: none;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
