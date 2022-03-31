@@ -275,6 +275,10 @@ a, a:visited {
     margin-bottom: 1.5rem;
 }
 
+#trainer-section img {
+    margin: 0 auto;
+}
+
 #section4 h2 {
     width: 18rem;
 }
@@ -636,9 +640,15 @@ a, a:visited {
     .icons-container {
         display: none;
     }
+
+    .input-email {
+        box-shadow: 2px 2px 8px rgba(17, 18, 53, .2);
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+@media only screen and (min-width: 1500px) {
+    body {
+        font-size: 18px;
+    }
 }
